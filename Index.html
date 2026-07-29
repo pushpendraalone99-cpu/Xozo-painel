@@ -1,0 +1,376 @@
+<!DOCTYPE html>    
+<html lang="en">    
+<head>    
+<meta charset="UTF-8">    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">    
+<title>xozo painels | freeefire antiban painels:</title> 
+
+<link rel="icon" href="dp.png">
+
+<meta property="og:title" content="xozo painels | freeefire antiban-painels:">
+<meta property="og:description" content="freeefire antiban freestyle painels, full safe. only headshot paonels.">
+<meta property="og:image" content="dp.png">
+    
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">    
+    
+<style>    
+    
+*{    
+    margin:0;    
+    padding:0;    
+    box-sizing:border-box;    
+    font-family:'Poppins',sans-serif;    
+}    
+    
+body{    
+    background:#090212;    
+    color:#fff;    
+}    
+    
+/* Navbar */    
+    
+nav{    
+    width:100%;    
+    display:flex;    
+    justify-content:space-between;    
+    align-items:center;    
+    padding:20px 8%;    
+    position:sticky;    
+    top:0;    
+    background:rgba(10,5,20,.85);    
+    backdrop-filter:blur(15px);    
+    border-bottom:1px solid rgba(180,100,255,.2);    
+}    
+    
+.logo{    
+    font-size:28px;    
+    font-weight:700;    
+    color:#d08cff;    
+    letter-spacing:1px;    
+}    
+    
+.search{    
+    width:320px;    
+    max-width:45%;    
+    padding:13px 18px;    
+    border-radius:50px;    
+    border:1px solid #7b2cff;    
+    background:#12061f;    
+    color:white;    
+    outline:none;    
+    transition:.3s;    
+}    
+    
+.search:focus{    
+    box-shadow:0 0 20px #8d3dff;    
+}    
+    
+/* Hero */    
+    
+.hero{    
+    text-align:center;    
+    padding:80px 20px;    
+}    
+    
+.hero h1{    
+    font-size:52px;    
+    font-weight:700;    
+    margin-bottom:15px;    
+}    
+    
+.hero span{    
+    color:#b14dff;    
+    text-shadow:0 0 20px #b14dff;    
+}    
+    
+.hero p{    
+    color:#bbbbbb;    
+    font-size:18px;    
+}    
+    
+/* Cards */    
+    
+.grid{    
+    
+    width:90%;    
+    margin:auto;    
+    
+    display:grid;    
+    grid-template-columns:    
+    repeat(auto-fit,minmax(300px,1fr));    
+    
+    gap:30px;    
+    
+    padding-bottom:60px;    
+    
+}    
+    
+.card{    
+    
+    background:#12061f;    
+    
+    border:1px solid rgba(180,100,255,.2);    
+    
+    border-radius:20px;    
+    
+    padding:28px;    
+    
+    transition:.35s;    
+    
+}    
+    
+.card:hover{    
+    
+    transform:translateY(-8px);    
+    
+    box-shadow:    
+    0 0 15px #8d3dff,    
+    0 0 40px rgba(141,61,255,.3);    
+    
+}    
+    
+.card h2{    
+    
+    margin-bottom:10px;    
+    
+    font-size:26px;    
+    
+}    
+    
+.version{    
+    
+    color:#b78cff;    
+    
+    font-size:14px;    
+    
+    margin-bottom:15px;    
+    
+}    
+    
+.desc{    
+    
+    color:#d7d7d7;    
+    
+    line-height:1.7;    
+    
+}    
+    
+/* Button */    
+    
+.btn{    
+    
+    display:inline-block;    
+    
+    margin-top:24px;    
+    
+    padding:13px 28px;    
+    
+    text-decoration:none;    
+    
+    color:white;    
+    
+    border-radius:50px;    
+    
+    border:1px solid #b14dff;    
+    
+    background:linear-gradient(    
+    90deg,    
+    #6d00ff,    
+    #b000ff    
+    );    
+    
+    transition:.35s;    
+    
+    font-weight:600;    
+    
+}    
+    
+.btn:hover{    
+    
+    transform:scale(1.06);    
+    
+    box-shadow:    
+    0 0 18px #a63dff,    
+    0 0 45px rgba(166,61,255,.6);    
+    
+}    
+    
+/* Footer */    
+    
+footer{    
+    
+    text-align:center;    
+    
+    padding:30px;    
+    
+    color:#999;    
+    
+    border-top:    
+    1px solid rgba(255,255,255,.08);    
+    
+}    
+    
+@media(max-width:700px){    
+    
+nav{    
+    
+flex-direction:column;    
+    
+gap:15px;    
+    
+}    
+    
+.search{    
+    
+width:100%;    
+max-width:100%;    
+    
+}    
+    
+.hero h1{    
+    
+font-size:36px;    
+    
+}  
+
+.card img{
+    display: block;
+    margin: 20px auto;
+    width: 250px;
+    height: auto;
+}
+    
+</style>    
+    
+</head>    
+    
+<body>    
+    
+<nav>    
+    
+<div class="logo">    
+FREEFIRE PAiNELS !    
+</div>    
+    
+<input    
+class="search"    
+id="search"    
+type="text"    
+placeholder="Search applications..."    
+onkeyup="searchApp()">    
+    
+</nav>    
+    
+<section class="hero">    
+    
+<h1>    
+Discover    
+<span>Antiban-Painels</span>    
+</h1>    
+    
+<p>    
+Fast downloads, clean interface and an optimized experience.    
+</p>    
+    
+</section>    
+    
+<section class="grid" id="grid">    
+    
+<div class="card">    
+    
+<h2>Full Headshot painel</h2>    
+    
+<div class="version">    
+Version 1.0.0    
+</div>    
+    
+<div class="desc">    
+Antiban, fast performance and a modern experience.    
+</div>   
+<img src ="p1.png">
+    
+<a href="app.apk" class="btn" download>    
+Download Painel    
+</a>    
+    
+</div>    
+    
+<div class="card">    
+    
+<h2>Hunter</h2>    
+    
+<div class="version">    
+Version 2.5.1    
+</div>    
+    
+<div class="desc">    
+100% Antiban Headshot painel. 
+<img src ="p4.png">
+</div>    
+    
+<a href="editor.apk" class="btn" download>    
+Download painel    
+</a>    
+    
+</div>    
+    
+<div class="card">    
+    
+<h2>Safe hack</h2>    
+    
+<div class="version">    
+Version 3.2.4    
+</div>    
+    
+<div class="desc">    
+Antiban hack, 100% safe.
+<img src ="p3.png">
+</div>    
+    
+<a href="toolkit.apk" class="btn" download>    
+Download painel    
+</a>    
+    
+</div>    
+<a href="privacy.html" class="button">Privacy & Policy</a>
+    
+</section>    
+    
+<footer>    
+    
+Copyright © 2026 xozo Antiban panels!   
+    
+</footer>    
+    
+<script>    
+    
+function searchApp(){    
+    
+let value=document    
+.getElementById("search")    
+.value    
+.toLowerCase();    
+    
+let cards=    
+document.querySelectorAll(".card");    
+    
+cards.forEach(card=>{    
+    
+let text=    
+card.innerText.toLowerCase();    
+    
+card.style.display=    
+text.includes(value)    
+?    
+"block"    
+:    
+"none";    
+    
+});    
+    
+}    
+    
+</script>    
+    
+</body>    
+</html>    
